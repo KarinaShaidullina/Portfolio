@@ -1,0 +1,37 @@
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info label{
+    font-weight: 600;
+}
+
+.info input{
+    height: 60px;
+    border-radius: 16px; 
+    border: 1px #7EB693 solid;
+    width: 400px;
+    padding-left: 23px;
+    color: #274C5B;
+    font-size: 18px;
+}
+
+.info button{
+    border-radius: 16px;
+    background: #274C5B;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    /* width: 230px; */
+    height: 79px;
+    border: none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}

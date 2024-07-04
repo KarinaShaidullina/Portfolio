@@ -1,0 +1,22 @@
+.eco{
+    display: flex;
+}
+  
+.eco_content{
+     background: #FFF;
+     border-radius: 30px;
+     position: absolute;
+     z-index: 2;
+     margin: 100px 140px 108px 671px;
+     padding: 67px 0 67px 89px;
+}
+  
+.eco_content_text{
+     margin-top: 20px;
+}
+  
+.eco img{
+     z-index: 1;
+     height: 831px;
+     width: 752px;
+}

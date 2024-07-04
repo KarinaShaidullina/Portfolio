@@ -1,0 +1,10 @@
+.articles{
+    padding: 0 180px 58px;
+}
+  
+.articles_cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* margin-bottom: 110px; */
+}

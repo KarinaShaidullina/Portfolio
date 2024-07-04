@@ -1,0 +1,31 @@
+.we_offer{
+    background: #274C5B;
+    text-align: center;
+    padding: 148px 180px;
+    margin-bottom: 141px;
+}
+  
+.we_offer h2{
+    color: #FFF;
+    margin-bottom: 33px;
+}
+  
+.we_offer_cards{
+    display: flex;
+    gap: 21px;
+    justify-content: center;
+}
+  
+.we_offer_cards img{
+    width: 294px;
+    height: 274px;
+}
+  
+.we_offer figcaption{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

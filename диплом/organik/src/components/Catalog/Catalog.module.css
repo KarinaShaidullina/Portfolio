@@ -1,0 +1,42 @@
+.catalog{
+    margin: 92px 0 138px;
+}
+  
+.catalog_cards{
+    margin-top: 20px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pagination .active{
+    width: 40px; 
+    height: 40px; 
+    background: #274C5B; 
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    font-family: Roboto, sans-serif;
+}
+
+.pagination{
+    margin: 40px 138px 0;  
+}
+
+.pagination button{
+    border: none;
+    width: 40px; 
+    height: 40px;
+    background: none;
+    border-radius: 7px;
+    color: #274C5B;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    font-family: Roboto, sans-serif;
+    cursor: pointer;
+}

@@ -1,0 +1,24 @@
+
+.items {
+  width: 40px;
+  display: flex;
+  height: 20px;
+  overflow: hidden;
+  align-items: center;
+}
+  
+.items__control {
+  width: 30px;
+  cursor: pointer;
+  text-align: center;
+}
+  
+.items__control:hover {
+    background: #D4D4D4;
+    color: #FFF;
+}
+  
+.items__current {
+  width: 30px;
+  text-align: center;
+}

@@ -1,0 +1,52 @@
+.offer{
+    background: #274C5B;
+    padding: 154px 140px 170px;
+}
+  
+.offer_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+  
+.offer_button{
+    width: 256px;
+    height: 79px;
+    border-radius: 16px;
+    background: #EFD372;
+    color: #274C5B;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.offer_button:active{
+    background: #EFF6F1;
+    color: #274C5B;
+    transition: background color 10s
+}
+  
+.offer .card_price img{
+    height: 18.38px;
+    width: 84px;
+    margin-left: 15px;
+}
+  
+.offer h2{
+    color: #FFF;
+}
+
+.offer_items{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}

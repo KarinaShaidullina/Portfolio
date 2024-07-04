@@ -1,0 +1,35 @@
+.empty_cart{
+    background-image: url("/public/img/EmptyCart.png");
+    background-repeat: no-repeat;
+    background-position: top -290px right 0;
+    background-size: cover;
+    height: 600px;
+    color: #FFF;
+    font-size: 26px;
+    padding: 150px 250px 150px;
+    text-align: center;
+}
+  
+.empty_cart h2{
+    color: #FFF;
+    margin-bottom: 20px;
+}
+  
+.empty_cart_button{
+    margin: 40px 350px 0;
+    border-radius: 16px;
+    background: #274C5B;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    padding: 28px 47px 29px 47px;
+    width: 330px;
+    height: 79px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}

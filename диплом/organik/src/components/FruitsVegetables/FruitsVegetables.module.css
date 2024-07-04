@@ -1,0 +1,38 @@
+.fruits_vegetables{
+    display: flex;
+    margin: 154px 190px 170px;
+}
+  
+.fruits_vegetables_card_1 p{
+    color: #FFF;
+}
+  
+.fruits_vegetables_card_1 h3{
+    color: #FFF;
+    font-size: 40px;
+}
+  
+.fruits_vegetables_card_2 h3{
+    font-size: 40px;
+}
+  
+.fruits_vegetables_card_1{
+    display: flex;
+    flex-direction: column;
+    background-image: url("/public/img/MainFruits.png");
+    width: 682px;
+    height: 297px;
+    background-size: cover;
+    margin-right: 26px;
+    padding: 69px 0 0 44px;
+}
+  
+.fruits_vegetables_card_2{
+    display: flex;
+    flex-direction: column;
+    background-image: url("/public/img/MainVegetables.png");
+    width: 682px;
+    height: 297px;
+    background-size: cover;
+    padding: 69px 0 0 44px;
+}

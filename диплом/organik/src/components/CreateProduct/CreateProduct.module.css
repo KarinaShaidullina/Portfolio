@@ -1,0 +1,75 @@
+.modal{
+    margin: 20px 0px;
+    border: #525C60 solid 2px;
+    padding: 20px 25px;
+    display: inline-block;
+}
+
+.modal_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.modal_header button{
+    font-weight: 700;
+}
+
+.modal_body{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal_body button{
+  border-radius: 12px;
+  background: #274C5B;
+  color: #FFF;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  padding: 15px;
+  border: none;
+  width: 350px;
+}
+
+.modal_body select{
+    width: 350px;
+    border: 1px #7EB693 solid;
+    height: 35px;
+    color: #274C5B;
+    font-size: 18px;
+    padding-left: 23px;
+}
+
+.modal input:not(input[type="file"]){
+    height: 35px;
+    border-radius: 6px; 
+    border: 1px #7EB693 solid;
+    width: 350px;
+    padding-left: 23px;
+    color: #274C5B;
+    font-size: 18px;
+}
+
+.modal input::placeholder{
+    color: #274C5B;
+    font-size: 18px;
+}
+
+input[type="file"]{
+   display: none;
+}
+
+.custom_file_upload {
+    height: 35px;
+    border-radius: 6px; 
+    border: 1px #7EB693 solid;
+    width: 350px;
+    padding-left: 23px;
+    color: #274C5B;
+    font-size: 18px;
+}
+

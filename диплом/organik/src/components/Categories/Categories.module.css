@@ -1,0 +1,39 @@
+.categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 180px;
+}
+  
+.categories_button{
+    border-radius: 16px;
+    background: #274C5B;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    padding: 28px 49px 28px 46px;
+    width: 265px;
+    height: 79px;
+    margin-top: 102px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.categories_button:active{
+    background: #EFF6F1;
+    color: #274C5B;
+    transition: background color 10s 
+}
+  
+.categories h2{
+    margin-bottom: 20px;
+}
+  
+
+

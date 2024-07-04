@@ -1,0 +1,15 @@
+.other_products{
+    margin: 0 120px 110px;
+}
+
+.other_products h2{
+    text-align: center;
+}
+
+.items{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+

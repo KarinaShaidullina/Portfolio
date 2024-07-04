@@ -1,0 +1,88 @@
+.card{
+    border-radius: 30px;
+    background: #F9F8F8;
+    width: 300px;
+    height: 380px;
+    cursor: pointer;
+}
+  
+.card img{
+    margin-left: 35px;
+    width: 235px;
+    height: 235px;
+}
+  
+.card button:hover{
+    background: #D4D4D4;
+    color: #FFF;
+}
+  
+.card_description{
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 8px;
+    background: #274C5B;
+    width: 96px;
+    height: 31px;   
+    padding: 5px 12px 6px 12px;
+    margin: 20px 0 0 30px;
+}
+  
+.card_title{
+    color: #274C5B;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    border-bottom: 2px solid #DEDDDD;
+    padding-bottom: 13px;
+    margin-left: 30px;
+    margin-right: 27px;
+}
+
+.add_to_cart{
+    padding: 0;
+    margin-top: 6px;
+    color: #4d6776;
+    font-size: 16px;
+    font-weight: 600;
+}
+  
+.card_price{
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+  
+.card_price img{
+    height: 18.38px;
+    width: 84px;
+    margin-left: 41px;
+}
+  
+.old_price{
+    text-decoration: line-through;
+    color: #B8B8B8;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 10px;
+}
+  
+.currency{
+    color: #274C5B;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 5px;
+    margin-right: 45px;
+}
+  
+.price__currency{
+    color: #274C5B;
+    font-weight: 700;
+    line-height: normal;
+}

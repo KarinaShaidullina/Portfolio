@@ -1,0 +1,51 @@
+.creative{
+    background-image: url("/public/img/AboutVegetables.png");
+    background-size: 811px 704px;
+    background-repeat: no-repeat;
+    background-position: top 113px left -30px;
+    padding: 150px 69px 143px 788px;
+    margin-bottom: 96px;
+}
+  
+.creative p{
+    margin: 14px 0 16px;
+}
+  
+.creative_content_cards{
+    display: flex;
+    gap: 65px;
+    margin-top: 48px;
+    margin-bottom: 45px;
+}
+  
+.creative_content_card{
+    display: flex;
+    gap: 15px;
+}
+  
+.creative_content_card h3{
+    font-weight: 500;
+}
+  
+.creative_button{
+    border-radius: 16px;
+    background: #274C5B;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    padding: 28px 39px 29px 39px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.creative_button:active{
+    background: #EFF6F1;
+    color: #274C5B;
+    transition: background color 10s
+}

@@ -1,0 +1,21 @@
+.choose_us_cards{
+    display: flex;
+    background: #F9F8F8;
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 169px;
+}
+  
+.choose_us_card{
+    border-radius: 30px;
+    background: #FFF;
+    padding: 50px 25px 19px 26px;
+    width: 257px;
+    height: 335px;
+    text-align: center;
+}
+  
+.choose_us_card h3{
+    margin-top: 15px;
+    margin-bottom: 12px;
+}

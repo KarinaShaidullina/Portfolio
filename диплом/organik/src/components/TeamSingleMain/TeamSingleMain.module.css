@@ -1,0 +1,6 @@
+.team_main{
+    background-image: url("/public/img/TeamSingle.png");
+    height: 450px;
+    background-position: -200px;
+    padding: 184px 350px;
+}

@@ -1,0 +1,122 @@
+.card_single{
+    display: flex;
+    justify-content: center;
+    gap: 88px;
+    align-items: center;
+    /* height: 300px; */
+}
+
+.old_price{
+    text-decoration: line-through;
+    color: #B8B8B8;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 10px;
+}
+
+.currency{
+    color: #274C5B;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 5px;
+}
+  
+.price__currency{
+    color: #274C5B;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card_description{
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 8px;
+    background: #274C5B;
+    width: 96px;
+    height: 31px;   
+    padding: 5px 12px 6px 12px;
+    margin: 20px 0 0 30px;
+}
+  
+.card_single_img{
+    background-color: #F9F8F8;
+    border-radius: 30px;
+    padding: 0 25px;
+}
+  
+.card_single_img img{
+    width: 310px;
+    height: 310px;
+}
+  
+.card_single_content{
+    align-items: flex-start;
+    width: 658px;
+    margin: 106.81px 0;
+}
+  
+.card_single_content .rating{
+    margin: 0;
+}
+  
+.card_single_price{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+  
+.card_single_p{
+    color: #274C5B;
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+}
+  
+.card_single_content input{
+    width: 134px; 
+    height: 80px;
+    border-radius: 16px;
+    border: 2px #274C5B solid;
+    color: #274C5B; 
+    font-size: 20px; 
+    font-family: Roboto; 
+    font-weight: 700;
+    padding: 28px 61px;
+}
+  
+.card_single_button{
+    border-radius: 16px;
+    background: #274C5B;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    padding: 28px 47px 29px 47px;
+    width: 315px;
+    height: 79px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.card_single_button:active{
+    background: #EFF6F1;
+    color: #274C5B;
+    transition: background color 10s 
+}
+  
+.card_single_add{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

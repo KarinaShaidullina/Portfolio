@@ -1,0 +1,17 @@
+.team{
+    padding: 157px 259px 182px 260px;
+    text-align: center;
+}
+  
+.team h2{
+    margin-bottom: 16px;
+}
+  
+.team_cards{
+    margin-top: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 27px;
+}
+  

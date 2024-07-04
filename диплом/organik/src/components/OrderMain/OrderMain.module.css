@@ -1,0 +1,7 @@
+.order_main{
+    background-image: url("/public/img/OrderMain.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 135px 0px 135px 40px;
+    text-align: center;
+}

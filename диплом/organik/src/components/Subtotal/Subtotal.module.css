@@ -1,0 +1,50 @@
+.subtotal{
+    border-top: 2px solid #DEDDDD;
+    margin: 0 190px;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+  
+.subtotal_price{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+  
+.subtotal_text{
+    margin-top: 15px;
+    display: flex;
+    gap: 5px;
+}
+  
+.checkout_button{
+    border-radius: 16px;
+    background: #274C5B;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    padding: 28px 47px 29px 47px;
+    width: 320px;
+    height: 79px;
+    border: none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.checkout_button:active{
+    background: #EFF6F1;
+    color: #274C5B;
+    transition: background color 10s 
+}
+
+.delivery{
+    display: flex;
+    gap: 5px;
+}

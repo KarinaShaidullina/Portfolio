@@ -1,0 +1,7 @@
+.shop{
+    background-image: url("/public/img/Shop.png");
+    height: 450px;
+    background-position: -300px;
+    text-align: center;
+    padding-block: 190px;
+}

@@ -1,0 +1,22 @@
+.column{
+    padding-left: 20px;
+    text-align: center;
+}
+
+.column:nth-child(3){
+    text-align: start;
+}
+
+.link {
+    color: #525C60;
+    text-decoration: none;
+}
+
+.link:hover{
+    background: #D4D4D4;
+    color: #FFF;
+}
+
+.thead{
+    font-size: 22px;
+}

@@ -1,0 +1,30 @@
+.home_page{
+    background-image: url("/public/img/Main.jpg");
+    height: 718px;
+    padding: 187px 730px 246px 210px;
+}
+  
+.home_page_button{
+    margin-top: 23px;
+    width: 220px;
+    height: 79px;
+    border-radius: 16px;
+    background: #EFD372;
+    color: #274C5B;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.home_page_button:active{
+    background: #274C5B;
+    color: #FFF;
+    transition: background color 10s 
+}

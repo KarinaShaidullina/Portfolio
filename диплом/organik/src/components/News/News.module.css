@@ -1,0 +1,42 @@
+.news{
+    padding: 0 190px 0 190px;
+    margin-bottom: 150px;
+}
+  
+.news_title{
+    display: flex;
+    margin-bottom: 45px;
+    gap: 140px;
+}
+  
+.news_button{
+    white-space: nowrap; 
+    border-radius: 16px;
+    border: 2px solid #274C5B;
+    background: #FFF; 
+    height: 80px;
+    padding: 0px 50px;
+    color: #274C5B;
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: normal;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.news_button:active{
+    background: #274C5B;
+    color: #FFF;
+    transition: background color 10s 
+}
+
+  
+.news_cards{
+    display: flex;
+    justify-content: space-between;
+}
+  

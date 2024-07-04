@@ -1,0 +1,10 @@
+.cart_main{
+    display: flex;
+    flex-direction: column;
+}
+  
+/* .cart_main_content{
+    display: flex;
+    margin-bottom: 15px;
+} */
+

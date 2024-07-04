@@ -1,0 +1,7 @@
+.shop_single_main{
+    background-image: url("/public/img/ShopSingle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 135px 0px 135px 150px;
+    text-align: center;
+}

@@ -1,0 +1,32 @@
+.content{
+    padding: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.content img{
+    height: 450px;
+    border-radius: 18px;
+}
+
+.content .img{
+    height: 500px;
+}
+
+.content_card{
+    display: flex;
+    gap: 90px;
+    align-items: center;
+}
+
+.subtitle{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card_text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

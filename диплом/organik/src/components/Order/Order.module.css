@@ -1,0 +1,23 @@
+.list{
+    list-style-type:  none;
+    padding: 0;
+    font-size: 21px;
+}
+
+.p{
+    font-size: 21px;
+    margin-top: 15px;
+}
+
+.list li{
+    margin-top: 15px;
+}
+
+.column{
+    padding-left: 20px;
+    text-align: center;
+}
+
+.column:first-child{
+    text-align: start;
+}

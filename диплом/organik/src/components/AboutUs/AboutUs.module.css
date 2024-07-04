@@ -1,0 +1,46 @@
+.about_us{
+    background: #F9F8F8;
+    background-image: url("/public/img/MainCitrus.png");
+    background-position: -10px;
+    padding: 116px 75px 119px 755px;
+    margin-bottom: 176px;
+}
+  
+.about_us p{
+    margin: 14px 0 16px;
+}
+  
+.about_us_card{
+    display: flex;
+    margin-top: 30px;
+    width: 564px;
+}
+  
+.about_us_card_text{
+    margin-left: 19px;
+}
+  
+.about_us_button{
+    margin-top: 46px;
+    width: 220px;
+    padding: 28px 39px;
+    border-radius: 16px;
+    background: #274C5B;
+    border: none;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.about_us_button:active{
+    background: #EFF6F1;
+    color: #274C5B;
+    transition: background color 10s 
+}
