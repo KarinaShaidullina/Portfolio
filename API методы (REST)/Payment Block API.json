@@ -1,0 +1,327 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Payment Block API",
+    "version": "1.0.0",
+    "description": "API для управления блокировками платежей клиентов"
+  },
+  "paths": {
+    "/api/v1/payment-block": {
+      "post": {
+        "summary": "Блокировка платежа клиента",
+        "description": "Позволяет заблокировать платежи клиента по указанной причине.",
+        "operationId": "blockPayment",
+        "requestBody": {
+          "description": "Данные для блокировки платежа",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "paymentId": {
+                    "type": "string",
+                    "format": "uuid",
+                    "description": "Идентификатор платежа, который блокируется"
+                  },
+                  "blockReasonId": {
+                    "type": "string",
+                    "format": "uuid",
+                    "description": "Идентификатор причины блокировки"
+                  },
+                  "comment": {
+                    "type": "string",
+                    "description": "Комментарий к блокировке"
+                  }
+                },
+                "required": [
+                  "paymentId",
+                  "blockReasonId"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Платеж заблокирован успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "format": "uuid",
+                      "description": "Идентификатор блокировки"
+                    },
+                    "paymentId": {
+                      "type": "string",
+                      "format": "uuid",
+                      "description": "Идентификатор заблокированного платежа"
+                    },
+                    "blockReasonId": {
+                      "type": "string",
+                      "format": "uuid",
+                      "description": "Идентификатор причины блокировки"
+                    },
+                    "comment": {
+                      "type": "string",
+                      "description": "Комментарий к блокировке"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка в запросе",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationError"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Платеж не найден",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotFoundError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/payment-block/{paymentId}/unblock": {
+      "post": {
+        "summary": "Разблокировка платежа клиента",
+        "description": "Позволяет разблокировать платеж клиента.",
+        "operationId": "unblockPayment",
+        "parameters": [
+          {
+            "name": "paymentId",
+            "in": "path",
+            "required": true,
+            "description": "Идентификатор платежа для разблокировки",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Платеж успешно разблокирован",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Payment successfully unblocked"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка в запросе",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationError"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Платеж не найден",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotFoundError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/payment-block/{paymentId}/status": {
+      "get": {
+        "summary": "Проверка статуса блокировки платежа",
+        "description": "Позволяет проверить, заблокирован ли платеж клиента.",
+        "operationId": "checkPaymentStatus",
+        "parameters": [
+          {
+            "name": "paymentId",
+            "in": "path",
+            "required": true,
+            "description": "Идентификатор платежа для проверки статуса блокировки",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Статус блокировки платежа",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "paymentId": {
+                      "type": "string",
+                      "format": "uuid",
+                      "description": "Идентификатор платежа"
+                    },
+                    "blockStatus": {
+                      "type": "string",
+                      "description": "Статус блокировки платежа",
+                      "enum": [
+                        "active",
+                        "resolved",
+                        "expired",
+                        "pending",
+                        "rejected",
+                        "suspended"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Платеж не найден",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotFoundError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/payment-block/{paymentId}/reason": {
+      "get": {
+        "summary": "Причина блокировки платежа",
+        "description": "Позволяет отличать блокировки мошенников от блокировок добропорядочных клиентов.",
+        "operationId": "checkFraudStatus",
+        "parameters": [
+          {
+            "name": "paymentId",
+            "in": "path",
+            "required": true,
+            "description": "Идентификатор платежа для проверки причины блокировки",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Причина блокировки платежа",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "paymentId": {
+                      "type": "string",
+                      "format": "uuid",
+                      "description": "Идентификатор платежа"
+                    },
+                    "blockReason": {
+                      "type": "string",
+                      "description": "Причина блокировки",
+                      "enum": [
+                        "fraud",
+                        "incorrect_details",
+                        "suspicious_activity",
+                        "payment_dispute",
+                        "account_suspension",
+                        "technical_issue",
+                        "legal_investigation",
+                        "other"
+                      ]
+                    },
+                    "blockDescription": {
+                      "type": "string",
+                      "description": "Описание причины блокировки",
+                      "example": "Подозрение на мошенничество"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Платеж не найден",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotFoundError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ValidationError": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "string",
+            "example": "Invalid request data"
+          },
+          "details": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "field": {
+                  "type": "string",
+                  "example": "paymentId"
+                },
+                "message": {
+                  "type": "string",
+                  "example": "Payment ID must be a valid UUID"
+                }
+              }
+            }
+          }
+        }
+      },
+      "NotFoundError": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "string",
+            "example": "Resource not found"
+          },
+          "message": {
+            "type": "string",
+            "example": "The payment with the provided ID was not found"
+          }
+        }
+      }
+    }
+  }
+}
